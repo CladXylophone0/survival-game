@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl56j6hiprdoj"]
+
+[ext_resource type="Texture2D" uid="uid://yyd2vepf14bl" path="res://Sprites/Pickaxe.png" id="1_t8a18"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cgrd"]
+size = Vector2(16, 4.25)
+
+[node name="IronPickaxe" type="Node2D"]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.785398
+texture = ExtResource("1_t8a18")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -2.875)
+shape = SubResource("RectangleShape2D_8cgrd")
